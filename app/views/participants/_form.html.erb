@@ -1,0 +1,62 @@
+<%= simple_form_for(@participant, remote: true, :html => { :role => "form" }) do |f| %>
+<div id="error_explanation" class="bg-danger text-danger">
+</div>
+ 
+<div class="row">
+ <div class="col-sm-6">
+  <div class="form-group">
+    
+    <%= f.input :first_name, autofocus: true, required: true, :input_html => { :size => 30, :maxlength => 25 }, class: "form-control first_input"   %>
+  </div>
+  <div class="form-group">
+    <%= f.input :last_name, maxlength: 11, minlength: 11, required: true, :input_html => { :size => 30, :maxlength => 25 }  %>
+  </div>
+  <div class="form-group">
+      <%= f.input :age, required: true, collection: 18..60   %>
+    </div>
+
+  <div class="form-group">
+    <%= f.input :phone, as: :integer, required: true, maxlength: 11, minlength: 11, :input_html => { :size => 30, :maxlength => 11, minlength: 11 } %>
+    <%= f.hint 'Must be 11 characters!' %>
+  </div>
+  <div class="form-group">
+    <%= f.input :email, required: true, :input_html => { :size => 30, :maxlength => 25 }%>
+  </div>
+  <div class="form-group">
+    <%= f.input :university, required: true, :input_html => { :size => 30, :maxlength => 25 } %>
+  </div>
+  <div class="form-group">
+    <%= f.input :major, required: true, :input_html => { :size => 30, :maxlength => 25 } %>
+  </div>
+</div>
+ 
+<div class="col-sm-6">
+  
+  <div class="form-group">
+    <%= f.label :first_question , :class => "control-label" %>
+    <%= f.select :first_question, [ 'Artificial intelligence','Cloud','Mobile Application' ], class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.input :second_question, required: true, input_html: {size: 30} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :third_question, :input_html => {:cols => 27, rows: 6}, :class => "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.input :fourth_question, required: true, :input_html => { :size => 30, :maxlength => 25 }  %>
+  </div>
+  <div class="form-group">
+    <%= f.input :fifth_question, required: true, :input_html => {:cols => 27, rows: 6} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :sixth_question, :input_html => { :size => 30, :maxlength => 25 }, :class => "form-control" %>
+  </div>
+
+  <div class="form-group">
+  <div class="modal-footer">
+    <%= f.submit "submit", :class => "btn btn-primary", id: "linkk" %>
+    </div>
+  </div>
+</div>
+</div>
+<% end %>

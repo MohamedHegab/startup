@@ -1,0 +1,703 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require owl.carousel
+ *= require owl.theme
+ *= require_tree .
+ *= require_self
+ */
+@import "font-awesome";
+
+@font-face {
+    font-family: 'OratorStd';
+    src: url(font-path('OratorStd-webfont.eot') + "?#iefix") format('embedded-opentype'),
+         url(font-path('OratorStd-webfont.woff')) format('woff'), 
+         url(font-path('OratorStd-webfont.ttf'))  format('truetype'),
+         url(font-path('OratorStd-webfont.svg') + "#OratorStd") format('svg');
+}
+
+@font-face {
+    font-family: 'Geometos';
+    src: url(font-path('geometos-webfont.eot') + "?#iefix") format('embedded-opentype'),
+         url(font-path('geometos-webfont.woff')) format('woff'), 
+         url(font-path('geometos-webfont.ttf'))  format('truetype'),
+         url(font-path('geometos-webfont.svg') + "#geometos") format('svg');
+}
+	
+body {
+	background: url("confectionary.png");
+	background-repeat: repeat;
+}
+
+.container {
+	transition: 2s;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+}
+
+.social-bar {
+	list-style: none;
+	position: absolute;
+	right: 265px;
+	top: 320px;
+}
+
+.side-image {
+	width: 30px;
+	margin-bottom: 60px;
+	transition: 500ms;
+}
+
+.head-image {
+	width: 100%;
+	height: 750px;
+	background: url("main_bg.jpg") no-repeat fixed center center / cover;
+
+}
+
+.logo-image {
+	position: absolute;
+	width: 544px;
+	bottom: 60px;
+	right: 422px;
+}
+
+.nav {
+	position: absolute;
+	top: 83px;
+	list-style: none;
+	right: 370px;
+	font-family: 'Geometos';
+	transition: 1s;
+}
+
+.nav li {
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 27px;
+	font-weight: 600;
+	color: white;
+}
+
+.nav li a {
+	color: white;
+	padding: 10px;
+	font-size: 27px;
+	font-weight: 600;
+	transition: 600ms;
+}
+
+.nav li a:hover {
+	color: black;
+	background-color: rgba(150,53,57,0.8);
+	text-decoration: none;
+}
+
+.nav li a:focus {
+	text-decoration: none;
+	color: black;
+	background-color: rgba(150,53,57,0.8);
+}
+
+.nav .selected a {
+	color: black;
+	background-color: rgba(150,53,57,0.5);
+}
+
+.about {
+	background-color: #920000;
+	padding: 20px 20px 10px 20px;
+	color: white;
+	font-family: 'Raleway';
+}
+
+.about h1 {
+	margin: 0 0 20px 0;
+	text-align: center;
+	font-weight: 600;
+	font-size: 60px;
+	font-family: 'Geometos';
+}
+
+.about-text {
+	margin-left: 40px;
+	font-size: 23px;
+}
+
+.about-text span {
+	color: black;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 392px;
+
+}
+
+.con {
+	text-align: center;
+	background-color: white;
+	padding: 0px 20px 20px 20px;
+
+}
+
+.next-event .big-text {
+	font-weight: 900;
+	font-size: 60px;
+	margin-top: 20px;
+	font-family: 'Geometos';
+}
+
+.next-event .event-hash {
+	color: white;
+	background-color: black;
+	padding: 30px;
+	display: inline-block;
+	font-family: 'OratorStd';
+	font-size: 48px;
+}
+
+.next-event .the-end {
+	font-family: 'OratorStd';
+	font-size: 60px;
+}
+
+.next-event .btn {
+	background-color: #920000;
+	display: inline-block;
+	color: white;
+	font-family: sans-serif;
+	font-size: 30px;
+	transition: 1s;
+}
+
+.next-event .btn:hover {
+	background-color: black;
+	color: #f7f7f7;
+}
+
+.next-event a {
+	color: white;
+}
+
+footer {
+	position: relative;
+}
+footer ul {
+	list-style: none;
+	text-align: center;
+	margin-top: 40px;
+	font-family: 'Geometos';
+}
+
+footer ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+footer ul li a{
+	color: black;
+	transition: 500ms;
+}
+
+footer ul li a:hover{
+	color: #920000;
+}
+
+footer .back-top {
+	font-size: 12px;
+	position: absolute;
+	right: 0;
+}
+
+.back-button {
+	margin-left: 10px;
+}
+
+.register-button {
+	margin-left: 100px;
+}
+
+.copy-write {
+	font-size: 10px;
+}
+
+.back-top a {
+	color: black;
+}
+
+.fa {
+	background-color: black;
+	padding: 5px 5px 6px 5px;
+	font-size: 18px;
+	-ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+    color: #920000;
+}
+
+@media all and (max-device-width: 1440px) {
+	.nav {
+		right: 379px;
+
+		ul li a {
+			font-size: 30px;
+			font-weight: 600;
+		}
+	}
+	.logo-image {
+	    width: 576px;
+	    top: 233px;
+	    right: 439px;
+	}
+	.side-image {
+		width: 30px;
+	}
+	.social-bar {
+		top: 266px;
+	}
+}
+
+@media all and (max-device-width: 1280px) {
+	.nav {
+		right: 300px;
+		ul li a {
+			font-size: 25px;
+			font-weight: 600;
+		}
+	}
+	.logo-image {
+	    width: 576px;
+	    top: 233px;
+	    right: 357px;
+	}
+	.social-bar {
+		right: 190px;
+	}
+}
+
+@media all and (max-device-width: 1200px) {
+	.nav {
+		right: 50px;
+
+		ul li a {
+			font-size: 25px;
+			font-weight: 600;
+		}
+	}
+}
+@media all and (max-device-width: 1024px) {
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+	}
+	.nav {
+		right: 208px;
+		top: 63px;
+		ul li a {
+			font-size: 25px;
+			font-weight: 600;
+		}
+	}
+	.logo-image {
+	    width: 576px;
+	    top: 171px;
+	    right: 265px;
+	}
+	.side-image {
+    	width: 38px;
+    }
+    .social-bar {
+		right: 134px;
+		top: 250px;
+	}
+	.register-button {
+		margin-right: 96px;
+	}
+}
+
+@media all and (max-device-width: 994px) {
+	.nav {
+		right: 10px;
+
+		ul li {
+			font-size: 25px;
+			a {
+			font-size: 25px;
+			font-weight: 600;
+			}
+		}
+	}
+	.logo-image {
+		width: 400px;
+		top: 216px;
+		right: 200px;
+	}
+	.side-image {
+    	width: 18px;
+    }
+}
+
+@media all and (max-device-width: 960px) {
+	.nav {
+		right: 168px;
+
+		ul li {
+			font-size: 25px;
+			a {
+			font-size: 25px;
+			font-weight: 600;
+			}
+		}
+	}
+	.head-image {
+		height: 612px;
+	}
+	.logo-image {
+		width: 400px;
+	    top: 216px;
+	    right: 306px;
+	}
+	.side-image {
+    	width: 29px;
+    }
+    .social-bar {
+    	right: 173px;
+    	top: 240px;
+    }
+    .register-button {
+    	margin-right: 88px;
+    }
+}
+
+
+@media all and (max-device-width: 735px) {
+	.nav {
+		right: 30px;
+
+		ul li {
+			font-size: 19px;
+			a {
+				font-size: 19px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+@media all and (max-device-width: 661px) {
+	.nav {
+		right: 40px;
+
+		ul li a {
+			font-size: 15px;
+			font-weight: 600;
+		}
+	}
+	.logo-image {
+		right: 120px;
+	}
+	.social-bar {
+		right: 40px;
+	}
+}
+@media all and (max-device-width: 600px) {
+	.nav {
+		right: 58px;
+
+		ul li {
+			margin-left: 10px; 
+			a {
+				font-size: 15px;
+				font-weight: 600;
+			}
+		}
+	}
+	.logo-image {
+		right: 60px;
+	}
+	ul.social-bar {
+		right: 126px;
+		top: 550px;
+		li {
+			display: inline-block;
+			margin-right: 60px;
+		}
+	}
+}
+@media all and (max-device-width: 518px) {
+	.nav {
+		right: 42px;
+
+		ul li {
+			margin-left: 10px; 
+			a {
+				font-size: 15px;
+				font-weight: 600;
+			}
+		}
+	}
+	.logo-image {
+		right: 35px;
+	}
+	ul.social-bar {
+		right: 92px;
+		top: 550px;
+		li {
+			display: inline-block;
+			margin-right: 60px;
+		}
+	}
+}
+@media all and (max-device-width: 414px) {
+	.nav {
+		right: 0px;
+		left: 0px;
+		ul li {
+			margin-left: 5px; 
+			a {
+				font-size: 15px;
+				font-weight: 600;
+			}
+		}
+	}
+	.side-image {
+    	width: 25px;
+    }
+	.logo-image {
+		right: 50px;
+		width: 300px;
+	}
+	ul.social-bar {
+		right: 42px;
+		top: 550px;
+		li {
+			display: inline-block;
+			margin-right: 60px;
+		}
+	}
+	.about {
+		.about-text {
+			font-size: 18px;
+			margin-left: 1px;
+		}
+	}
+	footer ul li {
+		 margin-left: 10px;
+	}
+}
+
+@media all and (max-device-width: 384px) {
+	.nav {
+		right: 10px;
+		left: 0px;
+		ul li {
+			margin-left: 5px; 
+			a {
+				font-size: 14px;
+				font-weight: 600;
+			}
+		}
+	}
+	.side-image {
+    	width: 25px;
+    }
+	.logo-image {
+		right: 30px;
+		width: 300px;
+	}
+	ul.social-bar {
+		right: 19px;
+		top: 550px;
+		li {
+			display: inline-block;
+			margin-right: 60px;
+		}
+	}
+	.about {
+		.about-text {
+			font-size: 18px;
+			margin-left: 1px;
+		}
+	}
+	footer ul li {
+		 margin-left: 10px;
+	}
+}
+
+
+
+@media all and (max-device-width: 375px) {
+	.nav {
+		left: 0px;
+		right: 0px;
+		ul li {
+			margin-left: 5px; 
+			font-size: 12px;
+			a {
+				font-size: 12px;
+				font-weight: 600;
+			}
+		}
+	}
+	.logo-image {
+		right: 30px;
+		width: 300px;
+	}
+	ul.social-bar {
+		right: 25px;
+		top: 550px;
+		li {
+			display: inline-block;
+			margin-right: 60px;
+		}
+	}
+
+	.about {
+		h1 {
+			font-size: 33px;
+		}
+		.about-text {
+			font-size: 17px;
+			margin-left: -1px;
+		}
+	}
+	#owl-demo .item img {
+		height: 200px;
+	}
+
+	.next-event {
+		.big-text {
+			font-size: 40px;
+		}
+		.event-hash {
+			font-size: 40px;
+		}
+	}
+	footer ul li {
+		 margin-left: 5px;
+	}
+}
+
+
+@media all and (max-device-width: 360px) {
+	.nav {
+		right: 0px;
+		left: 0px;
+		ul li {
+			margin-left: 5px; 
+			a {
+				font-size: 12px;
+				font-weight: 600;
+			}
+		}
+	}
+	.logo-image {
+		right: 24px;
+		width: 300px;
+	}
+	ul.social-bar {
+		right: 25px;
+		top: 550px;
+		li {
+			display: inline-block;
+			margin-right: 60px;
+		}
+	}
+
+	.about {
+		h1 {
+			font-size: 20px;
+		}
+		.about-text {
+			font-size: 17px;
+			margin-left: -10px;
+		}
+	}
+	#owl-demo .item img {
+		height: 200px;
+	}
+
+	.next-event {
+		.big-text {
+			font-size: 40px;
+		}
+		.event-hash {
+			font-size: 40px;
+		}
+	}
+	footer ul li {
+		 margin-left: 5px;
+	}
+}
+@media all and (max-device-width: 320px) {
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.nav {
+		right: 0px;
+		left: 0px;
+		ul li {
+			margin-left: -4px; 
+			a {
+				font-size: 12px;
+				font-weight: 600;
+			}
+		}
+	}
+	.logo-image {
+		right: 26px;
+		width: 259px;
+	}
+	ul.social-bar {
+		right: 6px;
+		top: 492px;
+		li {
+			display: inline-block;
+			margin-right: 54px;
+		}
+	}
+
+	.about {
+		h1 {
+			font-size: 20px;
+		}
+		.about-text {
+			font-size: 15px;
+			margin-left: 0px;
+		}
+	}
+	#owl-demo .item img {
+		height: 200px;
+	}
+
+	.next-event {
+		.big-text {
+			font-size: 35px;
+		}
+		.event-hash {
+			font-size: 40px;
+		}
+
+	}
+	footer ul li {
+		 margin-left: 1px;
+		 margin-top: 58px;
+	}
+	.register-button {
+		position: absolute;
+		right: 32px;
+	}
+}

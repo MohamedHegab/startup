@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="head-image" id="home">
+      <div class="nav">
+        <ul>
+          <li class="selected home-link"><%= link_to("HOME", "#home") %></li>
+          <li>|</li>
+          <li class="about-link"><%= link_to("ABOUT US", "#about") %></li>
+          <li>|</li>
+          <li class="event-link"><%= link_to("NEXT EVENT", "#register") %></li>
+        </ul>
+      </div>
+      <%= image_tag("logo.png",class: 'logo-image') %>
+      <ul class= "social-bar">
+      <li><%= link_to "https://facebook.com" do %>
+        <%= image_tag("fb_icon.png",class: 'side-image') %>
+      <% end %></li>
+      <li><%= link_to(@profile) do %>
+        <%= image_tag("twitter_icon.png",class: 'side-image') %>
+      <% end %></li>
+      <li><%= link_to(@profile) do %>
+        <%= image_tag("instgram_icon.png",class: 'side-image') %>
+      <% end %></li>
+      </ul>
+    </div>
+
+  <section class="about" id="about">
+    <h1 class="big-text">ABOUT US</h1>
+    <div class= "row">
+    	<div class="col-sm-12 col-md-6">
+        <p class="about-text"><span>STARTUP GRIND</span> is a really cool global community powered by Google for Entrepreneurs.We host monthly events for Cairo entrepreneurs.Each event features a successful local founder inovator educator or investor who shares personal stories and lessons learned on the road to building great companies.We offer yummy food and drinks and spend an hour filming an informal intimate fireside-chat-style interview with our awesome person of the month then have a Q&A mixer</p>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+	    	<div id="owl-demo" class="owl-carousel owl-theme">
+					<div class="item"><%= image_tag("about-us2.jpg",class: 'small-image',alt:"About-Us") %></div>
+			    <div class="item">
+			    <%= image_tag("about-us3.png",class: 'small-image',alt:"About-Us") %>
+			    </div>
+			  </div>
+			</div>
+    </div>
+
+  	
+  </section>
+  <sction class="next-event" id="register">
+  <div class="con">
+  <div class="row">
+  <div class="col-sm-12">
+  	<h1 class="big-text">NEXT EVENT</h1>
+  	</div>
+  	</div>
+  <div class="row">
+  <div class="col-sm-12">
+  	<h2 class="event-hash">STARTUP GRIND CAIRO TURNS ONE</h3>
+  		</div>
+  	</div>
+  <div class="row">
+  <div class="col-sm-12">
+  	<h2 class="the-end">AT THE END OF OCTOBER</h2>
+  		</div>
+  	</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <%= link_to("Register Now",new_participant_path, remote: true, class: "btn register-button") %>
+    
+  	</div>
+  	</div>
+  	</div>
+  </sction>
+  <footer>
+    <ul>
+			<li class="home-link"><%= link_to("HOME", "#home") %></li>
+      <li>|</li>
+      <li class="about-link"><%= link_to("ABOUT US", "#about") %></li>
+      <li>|</li>
+      <li class="event-link"><%= link_to("NEXT EVENT", "#event") %></li>
+    </ul>
+
+    <h4 class="back-top">
+    <%= link_to("Back to the top", "#home") %><a class="home-link back-button" href="#home"><i class="fa fa-chevron-right"></i></a></h4>
+    <h4 class="copy-write">Our website still under construction</h4>
+    <h4 class="copy-write">Startup Grind Cairo.All Rights Reserved © 2015</h4>
+  </footer>
+  </div>
+
+  <%= render 'dialog' %>
+</div> <!-- /container -->
