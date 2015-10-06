@@ -45435,3 +45435,36 @@ Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-06 21:44:03 +02
 
 
 Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-06 21:44:03 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-07 00:49:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ParticipantsController#index as HTML
+  Rendered participants/_dialog.html.erb (0.3ms)
+  Rendered participants/index.html.erb within layouts/application (100.8ms)
+Completed 200 OK in 737ms (Views: 726.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9057060b6f9d7ca2239b5e1bdb6b916f0bdfc12c380e98e4888933b7ab6c15cb.css?body=1" for 127.0.0.1 at 2015-10-07 00:49:32 +0200
+
+
+Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-07 00:49:32 +0200
+
+
+Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-07 00:49:32 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-07 00:50:36 +0200
+Processing by ParticipantsController#index as HTML
+  Rendered participants/_dialog.html.erb (0.1ms)
+  Rendered participants/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 1066ms (Views: 1065.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4c2d5eeadc9c970a32a5057b1cad1c4ca66d08eed2979d8950462d5841ea44bd.css?body=1" for 127.0.0.1 at 2015-10-07 00:50:37 +0200
+
+
+Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-07 00:50:37 +0200
+
+
+Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-07 00:50:37 +0200
