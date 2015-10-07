@@ -4,13 +4,13 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 set :branch, 'master' # e.g. 'master'
 
-server [HOST_IP], # e.g. 192.xxx.xxx.xxx
+server '159.203.88.249', # e.g. 192.xxx.xxx.xxx
   roles: [:web, :app, :db],
   port: fetch(:port),
   user: fetch(:user),
   primary: true
 
-set :deploy_to, "[APP_DIRECTORY]/#{fetch(:application)}" # e.g. "/var/apps/rails_blog"
+set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}" # e.g. "/var/apps/rails_blog"
 
 set :ssh_options, {
   forward_agent: true,

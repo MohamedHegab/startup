@@ -1,4 +1,4 @@
-lock '3.3.5'
+lock '3.1.0'
 
 set :application, 'startup'
 set :repo_url, 'git@github.com:MohamedHegab/startup.git' # change this to your git server
