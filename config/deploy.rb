@@ -1,7 +1,7 @@
-lock '3.4.0'
+lock '3.3.5'
 
 set :application, 'startup'
-set :repo_url, 'git@github.com:MohamedHegab/startup.git'
+set :repo_url, 'git@github.com:MohamedHegab/startup.git' # change this to your git server
 
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
@@ -14,6 +14,11 @@ after 'deploy:publishing', 'deploy:restart'
 
 namespace :deploy do
   task :restart do
+    invoke 'unicorn:stop'
     invoke 'unicorn:reload'
+  end
+
+  task :stop do
+    invoke 'unicorn:stop'
   end
 end

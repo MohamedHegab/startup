@@ -41,7 +41,9 @@ gem 'unicorn'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :development do
-  gem 'capistrano-rails'
+  # rails specific capistrano funcitons
+  gem 'capistrano-rails', '~> 1.1.0'
+  # integrate bundler with capistrano
   gem 'capistrano-rvm'
   gem 'capistrano3-unicorn'
 end
