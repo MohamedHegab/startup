@@ -45485,3 +45485,265 @@ Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-07 01:18:17 +02
 
 
 Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-07 01:18:17 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-07 05:08:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ParticipantsController#index as HTML
+  Rendered participants/_dialog.html.erb (0.3ms)
+  Rendered participants/index.html.erb within layouts/application (99.1ms)
+Completed 200 OK in 730ms (Views: 721.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-07 05:08:31 +0200
+
+
+Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-07 05:08:31 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-07 11:13:16 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (26.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ParticipantsController#index as HTML
+  Rendered participants/_dialog.html.erb (0.4ms)
+  Rendered participants/index.html.erb within layouts/application (228.8ms)
+Completed 200 OK in 1506ms (Views: 1497.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2015-10-07 11:13:18 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.9ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.3ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.7ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (36.2ms)
+
+
+Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-07 11:13:19 +0200
+
+
+Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-07 11:13:19 +0200
+
+
+Started GET "/participants/new" for 127.0.0.1 at 2015-10-07 11:13:27 +0200
+Processing by ParticipantsController#new as JS
+  Rendered participants/_form.html.erb (157.7ms)
+  Rendered participants/new.js.erb (174.7ms)
+Completed 200 OK in 236ms (Views: 194.7ms | ActiveRecord: 30.2ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-07 11:13:28 +0200
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.1ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2015-10-07 11:13:28 +0200
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.1ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.9ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-10-07 11:13:35 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2015-10-07 11:13:35 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/bundler/gems/activeadmin-893b46c6530c/app/views/active_admin/devise/shared/_links.erb (1.3ms)
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/bundler/gems/activeadmin-893b46c6530c/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (136.6ms)
+Completed 200 OK in 824ms (Views: 689.8ms | ActiveRecord: 39.5ms)
+
+
+Started GET "/assets/active_admin.self-c8195c0d5cc34a08520548c19280825464ab44178b7a1ea440e3a7061311eed8.css?body=1" for 127.0.0.1 at 2015-10-07 11:13:36 +0200
+
+
+Started GET "/assets/active_admin/print.self-3871dfa58bd97c88f6ae57320ff89a48fa00ba43f98dc75484c3295b5ad64376.css?body=1" for 127.0.0.1 at 2015-10-07 11:13:36 +0200
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAdminUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `admin_users` WHERE `admin_users`.`email` = BINARY 'a@a.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mAdminUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `admin_users` WHERE `admin_users`.`email` = BINARY 'a@a.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2015-10-07 11:15:15 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U+TPNu7/q/m5bhbtnnrWeJIp2H8mo/EeiShNDtNSB3QtSgMBUYSNJCZmDT0MpNPa32ZStZk93iWBvbkwwJ+F4g==", "admin_user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`email` = 'a@a.com'  ORDER BY `admin_users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `admin_users` SET `current_sign_in_at` = '2015-10-07 09:15:15', `sign_in_count` = 2, `updated_at` = '2015-10-07 09:15:15' WHERE `admin_users`.`id` = 1
+  [1m[36m (74.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 338ms (ActiveRecord: 75.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-10-07 11:15:15 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1  ORDER BY `admin_users`.`id` ASC LIMIT 1
+  [1m[36mParticipant Load (0.4ms)[0m  [1mSELECT  `participants`.* FROM `participants`  ORDER BY created_at desc LIMIT 5[0m
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/bundler/gems/activeadmin-893b46c6530c/app/views/active_admin/page/index.html.arb (263.0ms)
+Completed 200 OK in 307ms (Views: 284.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2015-10-07 11:15:21 +0200
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1  ORDER BY `admin_users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT  `admin_users`.* FROM `admin_users`  ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/bundler/gems/activeadmin-893b46c6530c/app/views/active_admin/resource/index.html.arb (435.3ms)
+Completed 200 OK in 462ms (Views: 437.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/participants" for 127.0.0.1 at 2015-10-07 11:15:27 +0200
+Processing by Admin::ParticipantsController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT  `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1  ORDER BY `admin_users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `participants` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `participants` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `participants`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `participants` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mParticipant Load (0.2ms)[0m  [1mSELECT  `participants`.* FROM `participants`  ORDER BY `participants`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/mohamed/.rvm/gems/ruby-2.1.5@startup/bundler/gems/activeadmin-893b46c6530c/app/views/active_admin/resource/index.html.arb (352.1ms)
+Completed 200 OK in 360ms (Views: 355.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-07 21:19:59 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ParticipantsController#index as HTML
+  Rendered participants/_dialog.html.erb (0.3ms)
+  Rendered participants/index.html.erb within layouts/application (101.8ms)
+Completed 200 OK in 740ms (Views: 729.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-07 21:20:00 +0200
+
+
+Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-07 21:20:00 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-07 22:43:45 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ParticipantsController#index as HTML
+  Rendered participants/_dialog.html.erb (0.3ms)
+  Rendered participants/index.html.erb within layouts/application (102.3ms)
+Completed 200 OK in 705ms (Views: 696.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-07 22:43:47 +0200
+
+
+Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-07 22:43:47 +0200

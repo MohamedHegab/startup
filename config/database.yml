@@ -21,4 +21,4 @@ production:
   <<: *default
   database: startup_production
   username: root
-  password: 654321
+  password: <%= ENV["SECRET_KEY_BASE"] %>
