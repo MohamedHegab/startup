@@ -2,9 +2,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: <%= ENV['DCH_DATABASE_USERNAME'] %>
-  password: 654321
-  socket: /var/run/mysqld/mysqld.sock
+  username: <%= ENV['STARTUP_DATABASE_USERNAME'] %>
+  password: 
+  host: 127.0.0.1
+  # socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
@@ -21,4 +22,4 @@ production:
   <<: *default
   database: startup_production
   username: root
-  password: <%= ENV["SECRET_KEY_BASE"] %>
+  password: <%= ENV["STARTUP_DATABASE_PASSWORD"] %>
