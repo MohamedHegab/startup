@@ -20,6 +20,5 @@ test:
 production:
   <<: *default
   database: startup_production
-  host: 159.203.88.249
   username: <%= ENV['STARTUP_DATABASE_USERNAME'] %>
   password: <%= ENV['STARTUP_DATABASE_PASSWORD'] %>
