@@ -4,7 +4,6 @@ default: &default
   pool: 5
   username: <%= ENV['STARTUP_DATABASE_USERNAME'] %>
   password: 
-  host: 127.0.0.1
   # socket: /var/run/mysqld/mysqld.sock
 
 development:
@@ -21,5 +20,6 @@ test:
 production:
   <<: *default
   database: startup_production
-  username: root
-  password: <%= ENV["STARTUP_DATABASE_PASSWORD"] %>
+  host: 159.203.88.249
+  username: <%= ENV['DCH_DATABASE_USERNAME'] %>
+  password: <%= ENV['DCH_DATABASE_PASSWORD'] %>
