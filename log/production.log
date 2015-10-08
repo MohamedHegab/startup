@@ -634,3 +634,26 @@ Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
   /home/mohamed/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
 
 
+D, [2015-10-08T02:01:47.437421 #18785] DEBUG -- :   [1m[36m (483.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2015-10-08T02:01:48.084660 #18785] DEBUG -- :   [1m[35m (644.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2015-10-08T02:01:48.087087 #18785] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-10-08T02:01:48.092743 #18785]  INFO -- : Migrating to CreateParticipants (20150918135239)
+D, [2015-10-08T02:01:48.485462 #18785] DEBUG -- :   [1m[35m (368.0ms)[0m  CREATE TABLE `participants` (`id` int(11) auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `age` int(11), `phone` varchar(255), `email` varchar(255), `university` varchar(255), `major` varchar(255), `first_question` varchar(255), `second_question` varchar(255), `third_question` text, `fourth_question` varchar(255), `fifth_question` text, `sixth_question` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-10-08T02:01:48.489798 #18785] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2015-10-08T02:01:48.492687 #18785] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150918135239')
+D, [2015-10-08T02:01:48.529586 #18785] DEBUG -- :   [1m[36m (36.6ms)[0m  [1mCOMMIT[0m
+I, [2015-10-08T02:01:48.529723 #18785]  INFO -- : Migrating to DeviseCreateAdminUsers (20150919171729)
+D, [2015-10-08T02:01:48.897446 #18785] DEBUG -- :   [1m[35m (344.9ms)[0m  CREATE TABLE `admin_users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-10-08T02:01:49.243333 #18785] DEBUG -- :   [1m[36m (343.2ms)[0m  [1mCREATE UNIQUE INDEX `index_admin_users_on_email`  ON `admin_users` (`email`) [0m
+D, [2015-10-08T02:01:49.624484 #18785] DEBUG -- :   [1m[35m (379.2ms)[0m  CREATE UNIQUE INDEX `index_admin_users_on_reset_password_token`  ON `admin_users` (`reset_password_token`) 
+D, [2015-10-08T02:01:49.625764 #18785] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2015-10-08T02:01:49.627076 #18785] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150919171729')
+D, [2015-10-08T02:01:49.668506 #18785] DEBUG -- :   [1m[36m (41.0ms)[0m  [1mCOMMIT[0m
+I, [2015-10-08T02:01:49.668765 #18785]  INFO -- : Migrating to CreateActiveAdminComments (20150919171732)
+D, [2015-10-08T02:01:50.025050 #18785] DEBUG -- :   [1m[35m (354.2ms)[0m  CREATE TABLE `active_admin_comments` (`id` int(11) auto_increment PRIMARY KEY, `namespace` varchar(255), `body` text, `resource_id` varchar(255) NOT NULL, `resource_type` varchar(255) NOT NULL, `author_id` int(11), `author_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+D, [2015-10-08T02:01:50.316693 #18785] DEBUG -- :   [1m[36m (289.0ms)[0m  [1mCREATE  INDEX `index_active_admin_comments_on_namespace`  ON `active_admin_comments` (`namespace`) [0m
+D, [2015-10-08T02:01:50.762360 #18785] DEBUG -- :   [1m[35m (443.6ms)[0m  CREATE  INDEX `index_active_admin_comments_on_author_type_and_author_id`  ON `active_admin_comments` (`author_type`, `author_id`) 
+D, [2015-10-08T02:01:51.141092 #18785] DEBUG -- :   [1m[36m (376.5ms)[0m  [1mCREATE  INDEX `index_active_admin_comments_on_resource_type_and_resource_id`  ON `active_admin_comments` (`resource_type`, `resource_id`) [0m
+D, [2015-10-08T02:01:51.142323 #18785] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2015-10-08T02:01:51.143683 #18785] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150919171732')[0m
+D, [2015-10-08T02:01:51.196376 #18785] DEBUG -- :   [1m[35m (52.3ms)[0m  COMMIT

@@ -20,5 +20,5 @@ test:
 production:
   <<: *default
   database: startup_production
-  username: <%= ENV['STARTUP_DATABASE_USERNAME'] %>
-  password: <%= ENV['STARTUP_DATABASE_PASSWORD'] %>
+  username: root
+  password: 654321

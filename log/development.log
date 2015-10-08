@@ -45747,3 +45747,17 @@ Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-07 22:43:47 +02
 
 
 Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-07 22:43:47 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-08 01:57:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ParticipantsController#index as HTML
+  Rendered participants/_dialog.html.erb (0.3ms)
+  Rendered participants/index.html.erb within layouts/application (137.9ms)
+Completed 200 OK in 755ms (Views: 746.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confectionary.png" for 127.0.0.1 at 2015-10-08 01:57:13 +0200
+
+
+Started GET "/assets/main_bg.jpg" for 127.0.0.1 at 2015-10-08 01:57:13 +0200
